@@ -14,9 +14,9 @@ let selectedTime, active
 
 //Event Listeners
 timeBlockContainer.addEventListener('click', selectTask);
+scheduleContainer.addEventListener('click', setColors);
 
-// Select Time
-
+// Select Times
 function selectTime(time, color){
     time.classlist.toggle('selected');
 
@@ -27,6 +27,14 @@ function selectTime(time, color){
     } else {
         active = false
     }
+}
+
+// Set colors for schedule
+function setColors(e){
+    if(e.target.classList.contains('task') && active === true){
+        e.target.style.backgroundColor = selectedColor;
+        e.target.innerHTML = icon;
+    } 
 }
 
 //Time Click

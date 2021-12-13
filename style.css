@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com');
+
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
@@ -68,4 +70,18 @@ body {
   .saveBtn i:hover {
     font-size: 20px;
     transition: all .3s ease-in-out;
+  }
+
+  .timeblock_container {
+    background: linear-gradient(#ebf4f5, #b5c6e0);
+    display: flex;
+    grid-template-columns: auto;
+    grid-auto-rows: auto;
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .taskname {
+    width: 50px;
+    height: 70px;
   }
